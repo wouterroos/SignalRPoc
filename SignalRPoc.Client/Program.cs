@@ -1,15 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNet.SignalR.Client;
+using SignalRPoc.Shared;
 
 namespace SignalRPoc.Client
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var connection = new HubConnection(Settings.SignalREndpoint);
+            var myHubProxy = connection.CreateHubProxy("MyHub");
+            connection.Start().Wait();
+
+            myHubProxy.On("sendMessage", message =>
+            {
+                Console.WriteLine(message);
+            });
+
+            myHubProxy.Invoke("Register", "Koen").Wait();
+            Console.ReadLine();
         }
     }
 }
+
+

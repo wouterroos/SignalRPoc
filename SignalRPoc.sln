@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRPoc.Client", "SignalRPoc.Client\SignalRPoc.Client.csproj", "{81C81BA5-58B0-4D51-B003-879462BB9FB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRPoc.Server", "SignalRPoc.Server\SignalRPoc.Server.csproj", "{81C81BA5-58B0-4D51-B003-879462BB9FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRPoc.Shared", "SignalRPoc.Shared\SignalRPoc.Shared.csproj", "{75D0CCAD-9374-4554-94CC-FADB481ADE25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRPoc.Client", "SignalRPoc.Client\SignalRPoc.Client.csproj", "{6A28DB32-A529-4501-94B9-94AE2223D2DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{81C81BA5-58B0-4D51-B003-879462BB9FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81C81BA5-58B0-4D51-B003-879462BB9FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81C81BA5-58B0-4D51-B003-879462BB9FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D0CCAD-9374-4554-94CC-FADB481ADE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D0CCAD-9374-4554-94CC-FADB481ADE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D0CCAD-9374-4554-94CC-FADB481ADE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D0CCAD-9374-4554-94CC-FADB481ADE25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A28DB32-A529-4501-94B9-94AE2223D2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A28DB32-A529-4501-94B9-94AE2223D2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A28DB32-A529-4501-94B9-94AE2223D2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A28DB32-A529-4501-94B9-94AE2223D2DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

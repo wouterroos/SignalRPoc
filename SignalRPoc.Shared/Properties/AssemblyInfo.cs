@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SignalRPoc.Client")]
+[assembly: AssemblyTitle("SignalRPoc.Shared")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SignalRPoc.Client")]
+[assembly: AssemblyProduct("SignalRPoc.Shared")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6a28db32-a529-4501-94b9-94ae2223d2db")]
+[assembly: Guid("75d0ccad-9374-4554-94cc-fadb481ade25")]
 
 // Version information for an assembly consists of the following four values:
 //
