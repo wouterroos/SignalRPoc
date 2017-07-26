@@ -20,10 +20,6 @@ namespace SignalRPoc.Server
     {
         private static void Main()
         {
-            // This will *ONLY* bind to localhost, if you want to bind to all addresses
-            // use http://*:8080 to bind to all addresses.
-            // See http://msdn.microsoft.com/en-us/library/system.net.httplistener.aspx
-            // for more information.
             using (WebApp.Start(Settings.SignalREndpoint))
             {
                 Console.WriteLine("Server running on {0}", Settings.SignalREndpoint);
