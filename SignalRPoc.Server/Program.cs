@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.Cors;
 using Microsoft.Owin.Hosting;
@@ -11,8 +12,21 @@ namespace SignalRPoc.Server
     {
         public void Register(string name)
         {
-            Console.WriteLine($"Recieved message from {name}");
+            Console.WriteLine($"Recieved fingerprint registration request from {name}");
             Clients.All.sendMessage($"Hello {name}, please put your finger on the scanner!");
+
+            //mock fingerprint scanning
+            Thread.Sleep(2000);
+
+            //mock checksum generation
+            Clients.All.sendMessage($"Generating fingerprint checksum for {name}...");
+            Thread.Sleep(2000);
+
+            //mock data access.
+            Clients.All.sendMessage($"Writing fingerprint checksum for {name} to database...");
+            Thread.Sleep(1000);
+
+            Clients.All.sendMessage("Done!");
         }
     }
 

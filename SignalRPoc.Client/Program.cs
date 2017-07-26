@@ -12,6 +12,7 @@ namespace SignalRPoc.Client
             var myHubProxy = connection.CreateHubProxy("MyHub");
             connection.Start().Wait();
 
+            Console.WriteLine($"Listening on {Settings.SignalREndpoint}");
             myHubProxy.On("sendMessage", message =>
             {
                 Console.WriteLine(message);
