@@ -2,6 +2,6 @@
 {
     public static class Settings
     {
-        public static string SignalREndpoint => "http://localhost:8080";
+        public static string SignalREndpoint => "https://localhost:8082";
     }
 }

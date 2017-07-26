@@ -11,6 +11,7 @@ namespace SignalRPoc.Server
     {
         public void Register(string name)
         {
+            Console.WriteLine($"Recieved message from {name}");
             Clients.All.sendMessage($"Hello {name}, please put your finger on the scanner!");
         }
     }
